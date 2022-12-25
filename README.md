@@ -28,7 +28,7 @@ Assuming you have crawled data at `bodosa/bodosa-news-{article_id}.txt`
 ```
 python sentinel-text-clean.py
 ```
-Assuming you have a crawled text inside `sentinel/{category}/sentinel-{category}-article_id.txt`
+Assuming you have a crawled text inside `sentinel/{category}/sentinel-{category}-{article_id}.txt`
 ## How to cite
 Find it useful? Cite
 ```
