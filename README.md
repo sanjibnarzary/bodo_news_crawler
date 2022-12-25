@@ -17,3 +17,13 @@ scrapy crawl sentinel
 This is intermedia script it will follow links and extract the page contents from the url it followed. However it can not follow the categories.
 
 Already crawled datas may contain extra data which needed cleaning.
+Find it useful? Cite
+```
+@inproceedings{bodonewscrawler2022,
+	title = {Web crawler for Bodo News Data from Sentinel and Bodosa News},
+  	author = {Sanjib Narzary},
+	booktitle = {Bodo News Crawler},
+	url = {https://github.com/sanjibnarzary/bodo_news_crawler},
+	year = {2022},
+}
+```
