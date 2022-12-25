@@ -17,7 +17,18 @@ scrapy crawl sentinel
 This is intermedia script it will follow links and extract the page contents from the url it followed. However it can not follow the categories.
 
 Already crawled datas may contain extra data which needed cleaning.
+## Text Cleaning
+I order to run text cleaning you may run the following
 
+```
+python bodosa-text-clean.py
+```
+Assuming you have crawled data at `bodosa/bodoa-news-{article_id}.txt`
+
+```
+python sentinel-text-clean.py
+```
+Assuming you have a crawled text inside `sentinel/{category}/sentinel-{category}-article_id.txt`
 ## How to cite
 Find it useful? Cite
 ```
