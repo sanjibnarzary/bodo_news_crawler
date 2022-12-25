@@ -17,6 +17,8 @@ scrapy crawl sentinel
 This is intermedia script it will follow links and extract the page contents from the url it followed. However it can not follow the categories.
 
 Already crawled datas may contain extra data which needed cleaning.
+
+## How to cite
 Find it useful? Cite
 ```
 @inproceedings{bodonewscrawler2022,
