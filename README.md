@@ -14,11 +14,11 @@ Make sure to give a particular Category URL
 ```
 scrapy crawl sentinel
 ```
-This is intermedia script it will follow links and extract the page contents from the url it followed. However it can not follow the categories.
+This is intermediate script it will follow links and extract the page contents from the url it followed. However it can not follow the categories.
 
 Already crawled datas may contain extra data which needed cleaning.
 ## Text Cleaning
-I order to run text cleaning you may run the following
+In order to run text cleaning you may run the following
 
 ```
 python bodosa-text-clean.py
