@@ -23,7 +23,7 @@ I order to run text cleaning you may run the following
 ```
 python bodosa-text-clean.py
 ```
-Assuming you have crawled data at `bodosa/bodoa-news-{article_id}.txt`
+Assuming you have crawled data at `bodosa/bodosa-news-{article_id}.txt`
 
 ```
 python sentinel-text-clean.py
