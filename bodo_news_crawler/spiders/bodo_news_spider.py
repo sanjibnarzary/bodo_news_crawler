@@ -732,9 +732,9 @@ class BodoNewsSpider(scrapy.Spider):
         content = response.css('section.tcb-post-content').xpath('//p//text()').getall()
         print(title,content)
         filename = f'bodosa-news-{self.page}.txt'
-        save_path = 'out'
-        completeName = os.path.join(save_path, filename) 
-        with open(filename, 'w', encoding="utf-8") as f:
+        save_path = 'bodosa_news_crawled'
+        complete_name = os.path.join(save_path, filename) 
+        with open(complete_name, 'w', encoding="utf-8") as f:
             r ="\n"
             f.write(title)
             f.write("\n")

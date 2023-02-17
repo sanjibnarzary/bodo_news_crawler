@@ -52,9 +52,9 @@ class BodoNewsSpider(scrapy.Spider):
             self.page += 1
             content = response.css('div.story').xpath('//p//text()').getall()
             filename = f'sentinel-horkhab-radab-{self.page}.txt'
-            save_path = 'out'
-            completeName = os.path.join(save_path, filename) 
-            with open(filename, 'w', encoding="utf-8") as f:
+            save_path = 'sentinel'
+            complete_name = os.path.join(save_path, filename) 
+            with open(complete_name, 'w', encoding="utf-8") as f:
                 r ="\n"
                 f.write('TITLE: '+title)
                 f.write("\n")
