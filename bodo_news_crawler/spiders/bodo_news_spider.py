@@ -4,6 +4,13 @@ import os.path
 class BodoNewsSpider(scrapy.Spider):
     name = "bodonews"
     page = 0
+
+    # create new directory
+    dir_name = "bodosa_news_crawled"
+
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
     def start_requests(self):
         urls = [
             'https://bodosanewspaper.com/%e0%a4%ae%e0%a4%a6%e0%a4%bf-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a4%be-%e0%a4%9c%e0%a4%be%e0%a4%b0%e0%a4%bf%e0%a4%ae%e0%a4%bf%e0%a4%a8%e0%a4%be%e0%a4%b0%e0%a4%bf-%e0%a4%b9%e0%a4%be/',

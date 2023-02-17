@@ -4,6 +4,13 @@ import os.path
 class BodoNewsSpider(scrapy.Spider):
     name = "sentinel"
     page = 0
+
+    # create new directory
+    dir_name = "sentinel"
+
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
     sent_urls = []
     def start_requests(self):
         urls = [
