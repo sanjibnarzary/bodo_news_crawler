@@ -4,6 +4,13 @@ import os.path
 class BodoNewsSpider(scrapy.Spider):
     name = "bodonews"
     page = 0
+
+    # create new directory
+    dir_name = "bodosa_news_crawled"
+
+    if not os.path.exists(dir_name):
+        os.makedirs(dir_name)
+
     def start_requests(self):
         urls = [
             'https://bodosanewspaper.com/%e0%a4%ae%e0%a4%a6%e0%a4%bf-%e0%a4%b8%e0%a4%b0%e0%a4%95%e0%a4%be%e0%a4%b0%e0%a4%be-%e0%a4%9c%e0%a4%be%e0%a4%b0%e0%a4%bf%e0%a4%ae%e0%a4%bf%e0%a4%a8%e0%a4%be%e0%a4%b0%e0%a4%bf-%e0%a4%b9%e0%a4%be/',
@@ -725,9 +732,9 @@ class BodoNewsSpider(scrapy.Spider):
         content = response.css('section.tcb-post-content').xpath('//p//text()').getall()
         print(title,content)
         filename = f'bodosa-news-{self.page}.txt'
-        save_path = 'out'
-        completeName = os.path.join(save_path, filename) 
-        with open(filename, 'w', encoding="utf-8") as f:
+        save_path = 'bodosa_news_crawled'
+        complete_name = os.path.join(save_path, filename) 
+        with open(complete_name, 'w', encoding="utf-8") as f:
             r ="\n"
             f.write(title)
             f.write("\n")
