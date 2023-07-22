@@ -34,7 +34,7 @@ Find it useful? Cite
 ```
 @inproceedings{bodonewscrawler2022,
 	title = {Web crawler for Bodo News Data from Sentinel and Bodosa News},
-  	author = {Sanjib Narzary},
+  	author = {Sanjib Narzary and Sukumar Nandi and Bidisha Som},
 	booktitle = {Bodo News Crawler},
 	url = {https://github.com/sanjibnarzary/bodo_news_crawler},
 	year = {2022},
